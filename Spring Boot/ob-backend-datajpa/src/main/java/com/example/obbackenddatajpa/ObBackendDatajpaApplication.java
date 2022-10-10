@@ -1,5 +1,6 @@
 package com.example.obbackenddatajpa;
 
+import com.example.obbackenddatajpa.config.SwaggerConfig;
 import com.example.obbackenddatajpa.entities.Book;
 import com.example.obbackenddatajpa.repository.BookRepository;
 import org.springframework.boot.SpringApplication;
@@ -30,6 +31,8 @@ public class ObBackendDatajpaApplication {
 
 		//borrar un libro
 		//repository.deleteById(1L);
+
+		context.getBean(SwaggerConfig.class, args);
 	}
 
 }
